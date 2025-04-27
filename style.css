@@ -1,0 +1,456 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+  }
+     
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero nav {
+    margin-top: 20px;
+}
+
+.hero nav a {
+    margin: 0 10px;
+    color: #00d1ff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.hero nav a:hover {
+    color: #008bbf;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Zentriert den Abschnitt vertikal */
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px; /* Begrenzte Breite für zentrierten Inhalt */
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.about-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.about-images img {
+    max-width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.price-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.service-card .price {
+    font-size: 1.2rem;
+    color: #00d1ff;
+    font-weight: bold;
+}
+
+.service-card .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.service-card .button:hover {
+    background-color: #0056b3;
+}
+
+.best-value {
+    border: 2px solid #00d1ff;
+    position: relative;
+}
+
+.best-value::before {
+    content: "Best Value";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00d1ff;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Past Work Section */
+.past-work {
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Zentriert den Abschnitt vertikal */
+}
+
+.past-work h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00aaff;
+}
+
+.past-work p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.past-work .info-card {
+    margin: 0 auto;
+    max-width: 700px; /* Begrenzte Breite für zentrierten Inhalt */
+    text-align: center;
+}
+
+.showcase-container {
+    display: none;
+}
+
+.work-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.work-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.work-text {
+    flex: 1;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.work-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.work-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work-item img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+/* Why Us Section */
+.why-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.review-slider {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.review-card {
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 200px;
+    text-align: center;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.review-line {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.view-more-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b0;
+   
+}
+
+
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+.contact-images img {
+    max-width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.space1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    min-height: 100vh; /* Nimmt die gesamte Höhe des Viewports ein */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Karte */
+.info-card {
+    background: #000000;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    animation: flyIn 3s ease-out forwards;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Zentriert die Karte horizontal */
+}
+  
+  /* Titel */
+  .info-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00aaff;
+  }
+  
+  /* Text */
+  .info-card p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* Fly-in Animation */
+  @keyframes flyIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Hover-Effekt */
+  .info-card:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 12px 40px rgba(0, 170, 255, 0.5);
+  }
+  .scroll-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+    background-color: #0056b3;}
