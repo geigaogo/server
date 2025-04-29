@@ -546,3 +546,42 @@ footer {
     line-height: 1.6;
     color: #ccc;
 }
+
+/* Review Slider */
+.review-slider {
+    display: flex;
+    flex-wrap: wrap; /* Ermöglicht Zeilenumbruch */
+    justify-content: center; /* Zentriert die Karten */
+    gap: 20px; /* Abstand zwischen den Karten */
+    margin: 20px 0;
+}
+
+.review-card {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); /* Jede Karte nimmt 25% der Breite minus den Abstand ein */
+    max-width: 300px; /* Maximale Breite der Karten */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 170, 255, 0.5);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .review-card {
+        flex: 1 1 calc(50% - 20px); /* Zwei Karten pro Zeile auf kleineren Geräten */
+    }
+}
+
+@media (max-width: 480px) {
+    .review-card {
+        flex: 1 1 100%; /* Eine Karte pro Zeile auf sehr kleinen Geräten */
+    }
+}
